@@ -6,7 +6,6 @@ With the increasing role of AI in news automation and text processing, this stud
 
 Our objective is to determine whether fine-tuning improves domain-specific accuracy and whether GPT-2 can generate coherent and relevant semiconductor-related content.
 
----
 
 ## Methodology  
 ### Pre-training & Fine-tuning
@@ -23,7 +22,6 @@ Our objective is to determine whether fine-tuning improves domain-specific accur
 - Performance before and after fine-tuning on the same dataset  
 - Analyzing whether fine-tuning helps GPT-2 generate more industry-specific news content  
 
----
 
 ## Data Source & Preprocessing
 ### Newsroom Dataset
@@ -32,7 +30,6 @@ Our objective is to determine whether fine-tuning improves domain-specific accur
 - Fields Extracted: Story text  
 - Preprocessing Steps: Tokenization, cleaning, and formatting to ensure compatibility with GPT-2.  
 
----
 
 ## Results & Evaluations
 ### GPT-2 (Pretrained)
@@ -53,8 +50,6 @@ Model | BLEU Score | Perplexity
 GPT-2 (Pretrained) | 0.0000 | N/A  
 GPT-2 (Fine-Tuned) | 0.0071 | 52.80  
 
----
-
 ## Discussions
 ### Key Findings
 - Fine-tuning slightly improves industry-specific content, but the model still struggles with repetitive phrasing.  
@@ -67,8 +62,6 @@ GPT-2 (Fine-Tuned) | 0.0071 | 52.80
 - Limited Training Data → Only 50 articles were used, which may not be enough for strong domain adaptation.  
 - BLEU Score Issues → GPT-2’s output differs significantly from real newsroom articles, making BLEU an unreliable measure.  
 
----
-
 ## Conclusion
 Fine-tuning GPT-2 does help adapt the model to semiconductor-related news, but the improvements are limited. The model learns industry terminology but struggles with coherence and diversity in generated news articles. Future improvements could include:
 - Larger training datasets (more newsroom articles).  
@@ -76,8 +69,6 @@ Fine-tuning GPT-2 does help adapt the model to semiconductor-related news, but t
 - Exploring alternative evaluation metrics (ROUGE, human assessment).  
 
 Ultimately, GPT-2 is not ideal for newsroom content generation without significant enhancements, but it demonstrates potential for domain-specific AI-generated text.
-
----
 
 ## References / Citations
 - Radford, A., Wu, J., Child, R., et al. (2019). "Language Models are Few-Shot Learners." OpenAI.  

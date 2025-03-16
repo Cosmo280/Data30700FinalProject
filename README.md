@@ -1,13 +1,16 @@
 # Final Project Summary
 
 ## Abstract / Objective / Motivation  
+
 With the increasing role of AI in news automation and text processing, this study explores the effectiveness of fine-tuning generative models for semiconductor-related news. We analyze how GPT-2, a Transformer-based text generation model, performs before and after fine-tuning on real-world newsroom data.  
+
 Our objective is to determine whether fine-tuning improves domain-specific accuracy and whether GPT-2 can generate coherent and relevant semiconductor-related content.
 
 ---
 
 ## Methodology  
 ### Pre-training & Fine-tuning
+
 - Model Used: GPT-2  
 - Dataset: TSMC-related news articles obtained via the Refinitiv API  
 - Fine-tuning Approach: Training GPT-2 on newsroom data to adapt it for semiconductor-related content generation.
@@ -25,8 +28,8 @@ Our objective is to determine whether fine-tuning improves domain-specific accur
 ## Data Source & Preprocessing
 ### Newsroom Dataset
 - Source: Refinitiv API (LSEG News)  
-- Content: 50 TSMC-related articles retrieved using automated news queries  
-- Fields Extracted: Story text, Headline, Source, Date  
+- Content: 562 TSMC-related articles retrieved using automated news queries  
+- Fields Extracted: Story text  
 - Preprocessing Steps: Tokenization, cleaning, and formatting to ensure compatibility with GPT-2.  
 
 ---
@@ -54,10 +57,10 @@ GPT-2 (Fine-Tuned) | 0.0071 | 52.80
 
 ## Discussions
 ### Key Findings
-- ✅ Fine-tuning slightly improves industry-specific content, but the model still struggles with repetitive phrasing.  
-- ✅ Perplexity (52.80) remains high, indicating that more training data or better hyperparameters may be needed.  
-- ✅ BLEU Score (0.0071) is very low, meaning the generated text does not closely match real news articles.  
-- ✅ GPT-2 learns domain-specific vocabulary but fails to generate fully coherent and diverse news pieces.  
+- Fine-tuning slightly improves industry-specific content, but the model still struggles with repetitive phrasing.  
+- Perplexity (52.80) remains high, indicating that more training data or better hyperparameters may be needed.  
+- BLEU Score (0.0071) is very low, meaning the generated text does not closely match real news articles.  
+- GPT-2 learns domain-specific vocabulary but fails to generate fully coherent and diverse news pieces.  
 
 ### Challenges & Limitations
 - Repetitive Outputs → Model repeats words like "semiconductor process" multiple times.  

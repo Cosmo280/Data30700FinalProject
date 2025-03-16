@@ -1,10 +1,3 @@
----
-title: "Fine-Tuning GPT-2 for Semiconductor News Generation"
-author: "Your Name"
-date: "`r Sys.Date()`"
-output: html_document
----
-
 # Final Project Summary
 
 ## Abstract / Objective / Motivation  

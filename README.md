@@ -1,5 +1,5 @@
 # Final Project Summary
-[Link to Report Video]()
+[Link to Report Video](https://youtu.be/lkyFCbGxngE)
 
 ## Abstract / Objective / Motivation  
 
